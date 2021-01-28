@@ -48,7 +48,7 @@ taskListRouterNoDependencies.delete('/:id', async (req, res) => {
         const checklist = await Checklist.findById(task.checklist)
         const taskToRemove = checklist.tasks.indexOf(task._id)
 
-        checklist.tasks.slice(taskToRemove, 1)
+        checklist.tasks.splice(taskToRemove, 1)
 
         await checklist.save()
 
