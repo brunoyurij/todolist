@@ -60,4 +60,17 @@ taskListRouterNoDependencies.delete('/:id', async (req, res) => {
     }
 })
 
+taskListRouterNoDependencies.put('/:id', async (req, res) => {
+    const task = await Task.findById(req.params.id)
+
+    try {
+        task.set(req.body.task)
+        await task.save()
+
+        res.status(200).json({ task })
+    } catch (error) {
+        res.status(422).json({ task: { ...error } })
+    }
+})
+
 export default { taskListRouter, taskListRouterNoDependencies }
