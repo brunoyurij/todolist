@@ -1,8 +1,7 @@
 # Todo List
 
 Todo List is a project created by me when I was studying javascript stack.
-Technologies :
-
+Technologies:
   - Javascript
   - EJS
   - Node
