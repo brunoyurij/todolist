@@ -1,6 +1,6 @@
 # Todo List
 
-Todo List is a project created when I was studying a stack javascript
+Todo List is a project created by me when I was studying javascript stack.
 Technologies :
 
   - Javascript
