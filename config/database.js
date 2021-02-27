@@ -1,8 +1,11 @@
 import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 mongoose.Promise = global.Promise
 
-mongoose.connect('mongodb://localhost/todolist', {
+mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })

@@ -5,12 +5,12 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start" : "node ./app.js",
+    "start": "node ./app.js",
     "dev": "nodemon"
   },
-  "engines" : {
-    "node" : "14.15.0"
-  },  
+  "engines": {
+    "node": "14.15.0"
+  },
   "devDependencies": {
     "eslint": "^7.17.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -21,7 +21,8 @@
     "prettier": "^2.2.1"
   },
   "dependencies": {
-    "ejs": "^3.1.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",    
     "express": "^4.17.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.11.13"
